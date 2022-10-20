@@ -15,7 +15,7 @@
     List<Vehiculo> vehiculos = (List) session.getAttribute("vehiculos");
 
     for(Vehiculo vehiculo: vehiculos) {
-        if (vehiculo.getMatricula() == matricula){
+        if (vehiculo.getMatricula().equals(matricula)){
             modelo = vehiculo.getModelo();
             marca = vehiculo.getMarca();
             color = vehiculo.getColor();
